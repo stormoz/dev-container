@@ -37,9 +37,8 @@
         "streetsidesoftware.code-spell-checker",
         "janisdd.vscode-edit-csv",
         "esbenp.prettier-vscode",
-        "ms-dotnettools.vscodeintellicode-csharp",
-        "GitHub.copilot",
-        "DanielSanMedium.dscodegpt"
+        "ms-vsliveshare.vsliveshare",
+        "ms-dotnettools.csdevkit"
 			]
 		}
 	},
@@ -53,7 +52,7 @@
 	// }
 
 	// postCreateCommand.sh parameters: $1=SA password, $2=dacpac path, $3=sql script(s) path
-	"postCreateCommand": "bash .devcontainer/mssql/postCreateCommand.sh 'P@ssw0rd' './bin/Debug/' './.devcontainer/mssql/' && bash .devcontainer/setup-environment/environment-setup.sh",
+	"postCreateCommand": "bash .devcontainer/setup-environment/environment-setup.sh && bash .devcontainer/mssql/postCreateCommand.sh 'P@ssw0rd' './bin/Debug/' './.devcontainer/mssql/'",
 	"features": {
 		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
 	}

@@ -1,17 +1,11 @@
 using Microsoft.EntityFrameworkCore;
+using MyAspNetProject.Models;
 
-namespace MyAspNetProject.Data
+namespace MyAspNetProject.Data;
+
+public class AppDbContext : DbContext
 {
-    public class AppDbContext : DbContext
-    {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<YourEntity> YourEntities { get; set; } // Replace with your model
-    }
-
-    public class YourEntity
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-    }
+    public DbSet<YourEntity> YourEntities { get; set; } // Replace with your model
 }
