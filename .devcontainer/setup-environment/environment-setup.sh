@@ -15,4 +15,7 @@ git config --global alias.po "!git push-origin"
 git config --global alias.curr-branch "!git rev-parse --abbrev-ref HEAD"
 git config --global alias.cp "!sh -c \"git add -A && git commit -m '\$1' && git po\" -"
 
+dotnet tool install --global dotnet-ef
+dotnet tool install -g dotnet-aspnet-codegenerator
+
 echo "Git aliases have been added successfully."
