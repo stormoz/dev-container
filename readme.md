@@ -6,13 +6,14 @@
 ## Prerequisites
 > NB: this application is configured to run using Dev Container Docker environment. All application specific dependencies (e.g. .NET SDK) is automatically installed inside the Docker container
 
-- Install VS Code
 - Install Docker for Desktop
+- Install VS Code
+- Open the repository in VS Code
+- Add Git username and email to the repository (NB: Dev Container will copy it automatically)
+  - `git config user.email "<you@example.com>"`
+  - `git config user.name "<Your Name>"`
 - Install "Dev Containers" extension by Microsoft
 - In command pallet of VS Code run "Dev Containers: Open Folder in Container" (NB: it may take some time to finish, please be patient)
-- Once open add username and email to the container environment's Git
-  - `git config --global user.email "<you@example.com>"`
-  - `git config --global user.name "<Your Name>"`
 - Authenticate to project via Git
 
 ## Fix C# syntax highlighting in VS Code
