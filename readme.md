@@ -17,8 +17,9 @@
 - Authenticate to project via Git
 
 ## Fix C# syntax highlighting in VS Code
-- Run `dotnet restore` to restore packages for all projects
+- Run `dotnet build` (or `dotnet restore` if the code does not compile) to restore packages for all projects
 - In command pallet of VS Code run ".NET: Restart language server"
+- If it still does not work, in command pallet of VS Code run "Developer: Reload window"
 
 ## Start app
 - In VS Code run or debug "Start API" launch configuration
